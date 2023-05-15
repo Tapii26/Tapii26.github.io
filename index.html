@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Bingo</title>
+</head>
+<body >
+    <div class="fondoOculto" id="fondoOculto"></div>
+    <article class="instrucciones" id="instrucciones">
+        <section class="muroInstrucciones">
+        <h3>Instrucciones:</h3>
+        <p>Pulsa el botón "Bola va!" para lanzar un bola.</p>
+        <p>Si quieres empezar de nuevo pulsa "Nueva Partida".</p>
+        <p>Al ganar pulsa "BINGO!" e introduce el nombre del ganador.</p>
+        <br>
+        <p>Bienvenido al juego del Bingo. Hecho por Juanjo Tapiador.</p>
+        <button class="button7" id="startGame"><h2>A disfrutar!</h2></button>
+        <button class="button7 oculto" id="return"><h2>Volver</h2></button>
+    </section>
+    </article>
+    <header>
+        <h1>EL BINGO</h1>
+        <section class="botonesIni">
+        <button class="button1" id="resetLaptop"><h2>Nueva Partida</h2></button>
+        <button class="button8" id="ayuda"><h2 class="instr">I</h2></button>
+    </section>
+    </header>
+    <main>
+        <div class="divOculto oculto" id="divOculto">
+            <div class="wall" id="wall"></div>
+            <div><button class="button6" id="finish"><h2>Volver a jugar</h2></button></div>
+        </div>
+    <article>
+        <section class="blockA">
+            <section class="subBlockA subBlockAizq">
+                <button class="button2" id="win"><h2>BINGO!</h2></button>
+            </section>
+            <section class="subBlockA oculto casilla" id="casilla">
+                <div class="text nombreGanador">
+                    <input class="write" type="text" id="winnerName" placeholder="Nombre del ganador">
+                    <button class="button5" id="enterName">LISTO</button>
+                </div>
+            </section>
+            <section class="subBlockA" id="progressBar">
+                <div class="text progress-bar">
+                    <div class="barra" id="vinoTinto"></div>
+                </div>
+            </section>
+        </section>
+        <div class="divOculto oculto" id="divOculto"></div>
+        <section class="blockB">
+            <div class="numberRow">
+                <div class="number" id="1">1</div>
+                <div class="number" id="2">2</div>
+                <div class="number" id="3">3</div>
+                <div class="number" id="4">4</div>
+                <div class="number" id="5">5</div>
+                <div class="number" id="6">6</div>
+                <div class="number" id="7">7</div>
+                <div class="number" id="8">8</div>
+                <div class="number" id="9">9</div>
+                <div class="number" id="10">10</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="11">11</div>
+                <div class="number" id="12">12</div>
+                <div class="number" id="13">13</div>
+                <div class="number" id="14">14</div>
+                <div class="number" id="15">15</div>
+                <div class="number" id="16">16</div>
+                <div class="number" id="17">17</div>
+                <div class="number" id="18">18</div>
+                <div class="number" id="19">19</div>
+                <div class="number" id="20">20</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="21">21</div>
+                <div class="number" id="22">22</div>
+                <div class="number" id="23">23</div>
+                <div class="number" id="24">24</div>
+                <div class="number" id="25">25</div>
+                <div class="number" id="26">26</div>
+                <div class="number" id="27">27</div>
+                <div class="number" id="28">28</div>
+                <div class="number" id="29">29</div>
+                <div class="number" id="30">30</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="31">31</div>
+                <div class="number" id="32">32</div>
+                <div class="number" id="33">33</div>
+                <div class="number" id="34">34</div>
+                <div class="number" id="35">35</div>
+                <div class="number" id="36">36</div>
+                <div class="number" id="37">37</div>
+                <div class="number" id="38">38</div>
+                <div class="number" id="39">39</div>
+                <div class="number" id="40">40</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="41">41</div>
+                <div class="number" id="42">42</div>
+                <div class="number" id="43">43</div>
+                <div class="number" id="44">44</div>
+                <div class="number" id="45">45</div>
+                <div class="number" id="46">46</div>
+                <div class="number" id="47">47</div>
+                <div class="number" id="48">48</div>
+                <div class="number" id="49">49</div>
+                <div class="number" id="50">50</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="51">51</div>
+                <div class="number" id="52">52</div>
+                <div class="number" id="53">53</div>
+                <div class="number" id="54">54</div>
+                <div class="number" id="55">55</div>
+                <div class="number" id="56">56</div>
+                <div class="number" id="57">57</div>
+                <div class="number" id="58">58</div>
+                <div class="number" id="59">59</div>
+                <div class="number" id="60">60</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="61">61</div>
+                <div class="number" id="62">62</div>
+                <div class="number" id="63">63</div>
+                <div class="number" id="64">64</div>
+                <div class="number" id="65">65</div>
+                <div class="number" id="66">66</div>
+                <div class="number" id="67">67</div>
+                <div class="number" id="68">68</div>
+                <div class="number" id="69">69</div>
+                <div class="number" id="70">70</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="71">71</div>
+                <div class="number" id="72">72</div>
+                <div class="number" id="73">73</div>
+                <div class="number" id="74">74</div>
+                <div class="number" id="75">75</div>
+                <div class="number" id="76">76</div>
+                <div class="number" id="77">77</div>
+                <div class="number" id="78">78</div>
+                <div class="number" id="79">79</div>
+                <div class="number" id="80">80</div>
+            </div>
+            <div class="numberRow">
+                <div class="number" id="81">81</div>
+                <div class="number" id="82">82</div>
+                <div class="number" id="83">83</div>
+                <div class="number" id="84">84</div>
+                <div class="number" id="85">85</div>
+                <div class="number" id="86">86</div>
+                <div class="number" id="87">87</div>
+                <div class="number" id="88">88</div>
+                <div class="number" id="89">89</div>
+                <div class="number" id="90">90</div>
+            </div>
+        </section>
+    </article>
+        <aside class="side">
+            <section class="subBlockC">
+                <div class="bombo">
+                    <h4 id="numeroBombo">B</h4>
+                </div>
+                <div class="pizarra">
+                    <h5  id="pizarra">Espero que disfruten!</h5>
+                </div>
+            </section>
+            <button class="button3" id="addBall"><h2>Bola va!</h2></button>
+            <button class="button4" id="resetMobile"><h2>Nueva Partida</h2></button>
+        </aside>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

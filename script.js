@@ -251,11 +251,11 @@ function bomboVivo(){
         setTimeout(function(){
             rotacionNumerica();           
 
-        },i*180)
+        },i*120)
     }
     setTimeout(function(){
             obtenerNumeroAleatorio();
-    },3650)
+    },2430)
 }
 //Personaliza la felicitacion con el nombre que se ha introducido en el input
 function felicitarGanador(){

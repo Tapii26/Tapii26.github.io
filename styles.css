@@ -518,11 +518,6 @@ samp:nth-of-type(8) { --rotation: 1deg; }
     z-index: 10;
 	max-width: 208px;
 }
-main-projects{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
 .background-non-square h2{
     -ms-transform: skew(10deg, 0deg);
     transform: skew(10deg, 0deg);
@@ -710,6 +705,18 @@ svg {
     svg {
         display: flex;
     }
+	.background-non-square{
+    margin: 0 auto;
+}
+.subtitle-projects{
+	margin: 0 auto;
+    margin-top: -6px;
+    margin-bottom: 34px;
+}
+	.contact-title{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	}
   }
 @media (max-width: 400px) {
     .main-expo-cv{

@@ -189,7 +189,7 @@ footer .super-title-3{
     background-color: #222;
     color: #f0eeee;
     padding: 20px 40px;
-
+    max-width: 358px;
 }
 .contact-content{
     display: flex;
@@ -516,6 +516,7 @@ samp:nth-of-type(8) { --rotation: 1deg; }
     filter: drop-shadow( 0 4px 5px #222); 
     position: relative;
     z-index: 10;
+	max-width: 208px;
 }
 .background-non-square h2{
     -ms-transform: skew(10deg, 0deg);
@@ -528,6 +529,7 @@ samp:nth-of-type(8) { --rotation: 1deg; }
     margin-top: -6px;
     margin-bottom: 34px;
     filter: drop-shadow( 0 4px 5px #222);
+	    max-width: 314.5px;
 }
 svg {
     width: 55px;
